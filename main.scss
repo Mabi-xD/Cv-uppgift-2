@@ -1,0 +1,106 @@
+$background-color: hsl(150, 6%, 20%);
+$primary-color: hsl(101, 31%, 55%);
+$secondary-color: hsl(163, 21%, 73%);
+
+header {
+    display: flex;
+    height: 100px;
+    background-color: $background-color;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0 0;
+    padding-left: 0.5em;
+    padding-right: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    background: linear-gradient(
+    to right, 
+    hsl(101, 31%, 30%) 0,
+    hsl(101, 31%, 80%)10%,
+    hsl(101, 31%, 30%) 20%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+    60% { background-position: 780px;
+    }
+    100% { background-position: 780px;
+
+    }
+}
+h2 {
+    color: $primary-color;
+    font-size: 2rem;
+    padding: 15px;
+}
+p {
+    color: $secondary-color;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+.nav-ul {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin: 0 0;   
+}
+
+.nav-li {
+    font-family: 'Gemunu Libre', sans-serif;
+    color: $primary-color;
+    list-style: none;
+    width: 20px;
+    margin-right: 5em;
+    font-size: 2rem;
+    padding-left: 2em;
+    border-left: 2px solid hsl(0, 0%, 30%);
+}
+
+.main-container {
+    height: fit-content;
+    width: 100%;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 120px;
+}
+.about {
+    height: fit-content;
+    width: 50vw;
+    border-bottom: 2px solid $primary-color;
+    border-left: 2px solid $primary-color;
+    align-self: flex-end;
+}
+.skills {
+    height: fit-content;
+    width: 50vw;
+    border-bottom: 2px solid $primary-color;
+    border-right: 2px solid $primary-color;
+}
+.projects {
+    height: fit-content;
+    width: 50vw;
+    border-bottom: 2px solid $primary-color;
+    border-left: 2px solid $primary-color;
+    align-self: flex-end;
+}
+.portrait {
+    position: absolute;
+    margin-top: 100px;
+    left: 170px;
+    top: 0px;
+    box-shadow: -20px -20px 20px $primary-color;
+}
