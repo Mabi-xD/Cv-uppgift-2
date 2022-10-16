@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 header {
   display: flex;
-  height: 100px;
+  height: auto;
   background-color: hsl(150deg, 6%, 10%);
   justify-content: space-around;
   align-items: center;
@@ -48,7 +52,6 @@ p {
 .nav-ul {
   display: flex;
   position: relative;
-  height: 100px;
   align-items: center;
   text-align: center;
 }
@@ -93,8 +96,13 @@ p {
   height: fit-content;
 }
 
-.about-container {
-  align-self: center;
+.about-me > p > span {
+  color: hsl(101deg, 31%, 55%);
+  font-weight: bold;
+}
+
+.about-h2 {
+  padding: 0;
 }
 
 .wrapper {
@@ -106,19 +114,6 @@ p {
 
 .wrapper:hover .content-cover {
   right: -100%;
-}
-
-.content-cover {
-  background-color: hsl(150deg, 6%, 10%);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transition: right 0.7s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .skills-container {
@@ -189,16 +184,16 @@ p {
 
 .social-media {
   color: hsl(101deg, 31%, 55%);
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
   position: fixed;
-  bottom: 2rem;
+  bottom: 3rem;
   right: 2rem;
   border-left: 0.1em solid hsl(101deg, 31%, 55%);
   border-radius: 1em;
-  padding: 1rem;
+  padding: 1em;
 }
 
 a {
@@ -214,15 +209,33 @@ a:hover {
 
 .additional-info {
   background-color: hsl(150deg, 6%, 10%);
-  color: hsl(101deg, 31%, 55%);
+  color: hsl(163deg, 21%, 73%);
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.additional-list {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 2em;
+}
+
+.additional-list > li {
+  list-style: none;
+  font-size: 1.2rem;
 }
 
 footer {
   background-color: hsl(150deg, 6%, 10%);
+}
+
+.footer-btns {
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 1em;
 }
 
 .mail-btn {
@@ -240,3 +253,132 @@ footer {
   padding: 0.5em;
   border-radius: 0.5em;
 }
+
+.social-media-2 {
+  display: none;
+  visibility: hidden;
+}
+
+@media (max-width: 811px) {
+  header {
+    justify-content: center;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 1.7rem;
+  }
+  p {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  h1 {
+    padding-left: 2em;
+  }
+  .nav-li:last-child {
+    border-right: 2px solid hsl(0deg, 0%, 30%);
+  }
+  .content-container {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  .about-me {
+    width: 100%;
+  }
+  .portrait-about-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .skills-container {
+    width: 100%;
+  }
+  .skillset-cover {
+    display: none;
+    visibility: hidden;
+  }
+  .projects-container {
+    width: 100%;
+  }
+  .projects-cover {
+    display: none;
+    visibility: hidden;
+  }
+  .icons {
+    font-size: 2.5rem;
+  }
+  .additional-list {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    gap: 1rem;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+  }
+  .social-media {
+    display: none;
+    visibility: hidden;
+  }
+  .social-media-2 {
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    font-size: 2.5rem;
+    padding-left: 1em;
+  }
+  .footer-btns {
+    padding-top: 1em;
+  }
+}
+@media (max-width: 481px) {
+  h1 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+  h2 {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+  p {
+    font-size: 1rem;
+    padding: 8px;
+  }
+  .nav-li {
+    font-size: 1.2rem;
+    padding: 0 1em;
+  }
+  .content-container {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .icons {
+    font-size: 2.5rem;
+  }
+  .additional-list {
+    font-size: 0.8rem;
+    flex-direction: column;
+  }
+  .social-media-2 {
+    font-size: 1.7rem;
+    gap: 0.2;
+  }
+  .back-to-top {
+    font-size: 0.8rem;
+    padding: 0;
+  }
+  .mail-btn {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=main.css.map */
