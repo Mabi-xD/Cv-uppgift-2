@@ -197,7 +197,6 @@ p {
 }
 
 a {
-  text-decoration: none;
   color: hsl(101deg, 31%, 55%);
   transition: 300ms;
 }
@@ -245,6 +244,7 @@ footer {
   border-color: hsl(101deg, 31%, 55%);
   padding: 0.5em;
   border-radius: 0.5em;
+  color: hsl(101deg, 31%, 55%);
 }
 
 .back-to-top {
@@ -253,6 +253,7 @@ footer {
   border-color: hsl(101deg, 31%, 55%);
   padding: 0.5em;
   border-radius: 0.5em;
+  color: hsl(101deg, 31%, 55%);
 }
 
 .social-media-2 {

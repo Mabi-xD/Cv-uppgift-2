@@ -216,7 +216,7 @@ p {
 }
 
 a {
-    text-decoration: none;
+
     color: $primary-color;
     transition: 300ms;
 }
@@ -264,6 +264,7 @@ footer {
     border-color: $primary-color;
     padding: 0.5em;
     border-radius: 0.5em;
+    color: $primary-color;
 }
 
 .back-to-top {
@@ -272,6 +273,7 @@ footer {
     border-color: $primary-color;
     padding: 0.5em;
     border-radius: 0.5em;
+    color: $primary-color;
 }
 
 .social-media-2 {
