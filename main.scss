@@ -89,7 +89,7 @@ p {
 
 .portrait {
     align-self: flex-start;
-     padding: 1em;
+    padding: 1em;
     border-top: 2px solid $primary-color;
     border-left: 2px solid $primary-color;
     margin-left: 10px;
@@ -105,8 +105,13 @@ p {
     height: fit-content;
 }
 
-.about-container {
-    align-self: center;
+.about-me>p>span {
+    color: $primary-color;
+    font-weight: bold;
+}
+
+.about-h2 {
+    padding: 0;
 }
 
 .wrapper {
@@ -115,10 +120,12 @@ p {
     position: relative;
     overflow: hidden;
 }
+
 .wrapper:hover .content-cover {
     right: -100%;
 
 }
+
 .content-cover {
     background-color: $background-color;
     width: 100%;
@@ -133,7 +140,7 @@ p {
 
 }
 
-.skills-container    {
+.skills-container {
     height: fit-content;
     width: 50vw;
     align-self: center;
@@ -180,6 +187,7 @@ p {
     right: -100%;
 
 }
+
 .cover-button {
     color: $button-clr;
     background-color: $background-color;
@@ -187,12 +195,12 @@ p {
     font-size: 2.5rem;
     padding: 0.5em 1em;
     border-radius: 0.25em;
-    text-shadow: 
-    0 0 0.30em #fff9,
-    0 0 0.40em $button-clr;
+    text-shadow:
+        0 0 0.30em #fff9,
+        0 0 0.40em $button-clr;
     box-shadow:
-    inset 0 0 0.7em $button-clr,
-    0 0 0.7em $button-clr; 
+        inset 0 0 0.7em $button-clr,
+        0 0 0.7em $button-clr;
 
 }
 
@@ -218,6 +226,7 @@ p {
     border-radius: 1em;
     padding: 1rem;
 }
+
 a {
     text-decoration: none;
     color: $primary-color;
@@ -230,19 +239,34 @@ a:hover {
 }
 
 .additional-info {
-background-color: $background-color;
-color: $primary-color;
+    background-color: $background-color;
+    color: $secondary-color;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+}
 
+.additional-list {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 2em;
+}
+
+.additional-list>li {
+    list-style: none;
+    font-size: 1.2em;
 }
 
 footer {
     background-color: $background-color;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
 }
+
 .footer-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1em;
 }
 
 .mail-btn {
@@ -252,10 +276,16 @@ footer {
     padding: 0.5em;
     border-radius: 0.5em;
 }
+
 .back-to-top {
     background-color: $background-color;
     font-size: 1.2rem;
     border-color: $primary-color;
     padding: 0.5em;
     border-radius: 0.5em;
+}
+
+.social-media-2 {
+    display: none;
+    visibility: hidden;
 }
